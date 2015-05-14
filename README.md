@@ -36,6 +36,7 @@ Prototype goal: allow San Diegans to be notified about approvals, applications r
 ### <a name="section_team"></a>Team
 
 - [Xavier Leonard](https://github.com/merelyanode "merelyanode")
+- [Maksim Pecherskiy](https://github.com/MrMaksimize "MrMaksimize")
 
 ### <a name="section_similar"></a>Similar projects
 
