@@ -1,4 +1,6 @@
 # Open DSD Notifications
+
+[![Join the chat at https://gitter.im/opensandiego/open-dsd-notifications](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/opensandiego/open-dsd-notifications?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 A system to let anyone stay informed about building development permits and code enforcement activity happening around them.
 
 ## Table of contents
