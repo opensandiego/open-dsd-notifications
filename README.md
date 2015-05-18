@@ -1,7 +1,8 @@
 # Open DSD Notifications
 
-[![Join the chat at https://gitter.im/opensandiego/open-dsd-notifications](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/opensandiego/open-dsd-notifications?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 A system to let anyone stay informed about building development permits and code enforcement activity happening around them.
+
+[![Join the chat at https://gitter.im/opensandiego/open-dsd-notifications](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/opensandiego/open-dsd-notifications?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 ## Table of contents
 - [Pitch](#section_pitch "Pitch")
@@ -50,6 +51,6 @@ Prototype goal: allow San Diegans to be notified about approvals, applications r
 
 ### <a name="section_participate"></a>How to Participate
 
-- Chat with us on the project Slack [#dsdalerts](https://opensandiego.slack.com/signup) channel
+- Chat with us on the project channel: [![Join the chat at https://gitter.im/opensandiego/open-dsd-notifications](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/opensandiego/open-dsd-notifications?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)  
 - Email us at [opensandiego@googlegroups.com](opensandiego@googlegroups.com)
 - Join our [meetups](http://www.meetup.com/Open-San-Diego)
