@@ -25,8 +25,34 @@ var router = express.Router();              // get an instance of the express Ro
 // test route to make sure everything is working (accessed at GET http://localhost:8080/api)
 router.get('/', function(req, res) {
   var dsdURL = "http://opendsd.sandiego.gov/web/Api/Maps/CECase?SearchType=CECase&SouthWestLatitude=32.71879985593221&SouthWestLongitude=-117.16525563507082&NorthEastLatitude=32.74399836325726&NorthEastLongitude=-117.12534436492922&Page=1&PageLimit=100";
+  console.log("ASS1");
   request(dsdURL, function(error, response, body) {
-    return res.send(body);
+    var body = JSON.parse(body);
+    var features = new Array();
+    _.each(body.results, function(element, index) {
+      var feature = {
+        id: element.caseId,
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: [element.Longitude, element.Latitude],
+        },
+        properties: {
+          "CaseId":element.CaseId,
+          "Description": element.Description,
+          "OpenDate":element.OpenDate,
+          "CloseDate":element.CloseDate,
+          "StreetAddress":element.StreetAddress,
+          "title": "Some string we make",
+        }
+      };
+      features.push(feature);
+    });
+    var resp = {
+      "type": "FeatureCollection",
+      "features": features
+    }
+    return res.json(resp);
   });
 });
 
