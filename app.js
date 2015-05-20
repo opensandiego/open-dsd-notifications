@@ -9,6 +9,7 @@ var app        = express();                 // define our app using express
 var bodyParser = require('body-parser');
 var request = require('request');
 var url = require('url');
+var _ = require('lodash');
 
 // configure app to use bodyParser()
 // this will let us get the data from a POST
@@ -25,7 +26,7 @@ var router = express.Router();              // get an instance of the express Ro
 router.get('/', function(req, res) {
   var dsdURL = "http://opendsd.sandiego.gov/web/Api/Maps/CECase?SearchType=CECase&SouthWestLatitude=32.71879985593221&SouthWestLongitude=-117.16525563507082&NorthEastLatitude=32.74399836325726&NorthEastLongitude=-117.12534436492922&Page=1&PageLimit=100";
   request(dsdURL, function(error, response, body) {
-    res.json(body);
+    return res.send(body);
   });
 });
 
