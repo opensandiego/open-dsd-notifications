@@ -25,11 +25,16 @@ var router = express.Router();              // get an instance of the express Ro
 // test route to make sure everything is working (accessed at GET http://localhost:8080/api)
 router.get('/', function(req, res) {
   var dsdURL = "http://opendsd.sandiego.gov/web/Api/Maps/CECase?SearchType=CECase&SouthWestLatitude=32.71879985593221&SouthWestLongitude=-117.16525563507082&NorthEastLatitude=32.74399836325726&NorthEastLongitude=-117.12534436492922&Page=1&PageLimit=100";
-  console.log("ASS1");
+  
   request(dsdURL, function(error, response, body) {
     var body = JSON.parse(body);
     var features = new Array();
     _.each(body.results, function(element, index) {
+      // Change fields based on permit type. Need to make flexible for other OpenDSD types, also, need
+      // to understand what the "Case Depiction" field actually does.
+      
+      var titleString = "There's been a code enforcement case updated near you at: " +element.StreetAddress+".<br/> The violation is "+ element.Description +".<br/> You can find out more at: http://opendsd.sandiego.gov/web/CECases/Details/"+ element.CaseId 
+
       var feature = {
         id: element.caseId,
         type: "Feature",
@@ -43,7 +48,7 @@ router.get('/', function(req, res) {
           "OpenDate":element.OpenDate,
           "CloseDate":element.CloseDate,
           "StreetAddress":element.StreetAddress,
-          "title": "Some string we make",
+          "title": titleString,
         }
       };
       features.push(feature);
