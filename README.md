@@ -45,6 +45,7 @@ Prototype goal: allow San Diegans to be notified about approvals, applications r
 ### <a name="section_similar"></a>Similar projects
 
 - [Citygram](https://github.com/citygram/citygram-services)
+- [Citygram Services Guide](https://github.com/codeforamerica/citygram/wiki/Getting-Started-with-Citygram)
 
 ### <a name="section_github"></a>GitHub
 
