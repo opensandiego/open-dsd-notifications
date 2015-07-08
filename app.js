@@ -23,7 +23,7 @@ var port = process.env.PORT || 8080;        // set our port
 var router = express.Router();              // get an instance of the express Router
 
 // test route to make sure everything is working (accessed at GET http://localhost:8080/api)
-router.get('/', function(req, res) {
+router.get('/dsd/code-enforcement', function(req, res) {
   var dsdURL = "http://opendsd.sandiego.gov/web/Api/Maps/CECase?SearchType=CECase&SouthWestLatitude=32.71879985593221&SouthWestLongitude=-117.16525563507082&NorthEastLatitude=32.74399836325726&NorthEastLongitude=-117.12534436492922&Page=1&PageLimit=100";
 
   request(dsdURL, function(error, response, body) {
@@ -63,7 +63,7 @@ router.get('/', function(req, res) {
 
 
 // Route for Discretionary Approvals. Access/GET http://localhost:8080/approvals)
-router.get('/approvals', function(req, res) {
+router.get('/dsd/approvals', function(req, res) {
   var dsdURL = "http://opendsd.sandiego.gov/web/Api/Maps/ApprovalsMap?SearchType=Discretionary&SouthWestLatitude=32.71879985593221&SouthWestLongitude=-117.16525563507082&NorthEastLatitude=32.74399836325726&NorthEastLongitude=-117.12534436492922&Page=1&PageLimit=100";
 
   request(dsdURL, function(error, response, body) {
