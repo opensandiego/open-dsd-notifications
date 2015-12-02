@@ -43,7 +43,7 @@ router.get('/dsd/code-enforcement', function(req, res) {
           coordinates: [element.Longitude, element.Latitude],
         },
         properties: {
-          "CaseId":element.CaseId,
+          "id":element.CaseId,
           "Description": element.Description,
           "OpenDate":element.OpenDate,
           "CloseDate":element.CloseDate,
