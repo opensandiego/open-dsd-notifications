@@ -1,19 +1,3 @@
-<<<<<<< 1258887d9da40e4cbd102014c8981b72b0a7bf8c
-# Open DSD Notifications
-
-A node.js app providing San Diego data to http://citygram.org, allowing anyone to stay informed about nearby events:
-* building development permits
-* code enforcement activity
-
-[![Join the chat at https://gitter.im/opensandiego/open-dsd-notifications](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/opensandiego/open-dsd-notifications?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
-### <a name="section_pitch"></a>Pitch
-
-Via a phone app, users can see building/development permit and code enforcement activity happening around them.
-
-* Can subscribe to permit activity occurring within a certain proximity to chosen location.
-* Can help increase community involvement/awareness.
-=======
 [![Join the chat at https://gitter.im/opensandiego/open-dsd-notifications](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/opensandiego/open-dsd-notifications?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 # Open DSD Notifications
