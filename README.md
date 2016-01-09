@@ -6,6 +6,8 @@ A node.js app providing San Diego data to http://citygram.org, allowing anyone t
 * building development permits
 * code enforcement activity
 
+Docs about the San Diego Development Services Department (DSD), the data available, and access points, can be [found here](https://github.com/opensandiego/open-dsd-notifications/blob/master/dsdDescriptions.md).
+
 ### Installation
 
 1. Install <a href="https://nodejs.org/en/download/">Node and npm</a>
